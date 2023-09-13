@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeff's Website</title>
+    <script type="module" crossorigin src="/assets/index.9a2fb90c.js"></script>
+    <link rel="stylesheet" href="/assets/index.e0d4f5e8.css">
+   
+
+  </head>
+  <body>
+    
+
+    <canvas id="bg"></canvas>
+   
+      <nav class="navbar" style="/* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+        <a href="#"
+        ><img
+          src="https://github.com/ecemgo/today-i-learned-app/assets/13468728/4f2923ea-9eca-4221-8b18-7198f78fd04e"
+          alt="logo"
+          class="logo"
+      /></a>
+        <div>
+        <a href="#" class="nav-item" style="--i: 0">Home</a>
+        <a href="#" class="nav-item" style="--i: 1">Plan Your Visit</a>
+        <a href="#" class="nav-item" style="--i: 2">Magical Places</a>
+        </div>
+        <style>
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  min-height: 100vh;
+}
+          nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  width: 40px;
+}
+
+.nav-item {
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  margin-left: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover {
+  color: rgb(168, 239, 255, 0.9);
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  width: 0;
+  height: 0.15rem;
+  transform: translateX(-50%);
+  background-color: rgb(168, 239, 255, 0.9);
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+        </style>
+      </nav>
+      
+     
+
+    <main>
+
+      
+      
+    <section style="/* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+      <div class='container' style="margin-top: 200px; margin-left: 200px">
+        <div class="animate__shape animate__shape_center"></div>
+        <style>
+          .animate__shape {
+            position: relative;
+            display: inline-block;
+        }
+
+        .animate__shape::after {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(45deg, rgb(224, 220, 255) 0%, rgb(255, 195, 231) 100%);
+            z-index: -1;
+            animation: scale 10s ease infinite;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .animate__shape_center::after {
+            top: 30%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes scale {
+            0% {
+                border-radius: 10% 50% 70% 30% / 30% 30% 70% 70%;
+            }
+
+            50% {
+                border-radius: 17% 83% 24% 76% / 78% 78% 22% 22%;
+                background-image: linear-gradient(90deg, rgb(224, 220, 255) 0%, rgb(255, 195, 231) 100%);
+                opacity: .25;
+            }
+
+            60% {
+                border-radius: 40%;
+            }
+
+            75% {
+                border-radius: 73% 27% 79% 21% / 51% 62% 38% 49%;
+            }
+
+            100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+        }
+
+        </style>
+      </div>
+      
+          <img src="./jeff.png" width="200px" style="border-radius: 20px;">
+        
+
+        <h2>I like making stuff and putting it on the internet</h2>
+        <br>
+       
+            
+            
+        <button class="custom-btn btn-1" style="font-family: Poppins, sans-serif; float: right;">Read More</button>
+            <style>
+              .custom-btn {
+                width: 130px;
+                height: 40px;
+                color: #fff;
+                border-radius: 5px;
+                padding: 10px 25px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 500;
+                background: transparent;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+                box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+                outline: none;
+              }
+
+              .btn-1 {
+                background: rgb(6,14,131);
+                background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+                border: none;
+              
+              }
+              .btn-1:hover {
+                background: rgb(0,3,255);
+                background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+              }
+
+
+
+
+            </style>
+
+
+          </button>
+
+
+        </div>
+      </section>
+    
+      
+      
+      
+
+      
+
+
+      <section style="/* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+
+        <h2>I like making stuff and putting it on the internet</h2>
+      </section>
+      
+      <section style="/* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+        <h2>📜 Manifesto</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h2><img src="./normal.jpg" width="60px"> RAPHAEL </h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <br>
+        <div>
+        <button class="custom-btn btn-3" style="font-family: Poppins, sans-serif; float: right;"><a href="http://127.0.0.1:5500/"> <span>Read More</span></a>
+          <style>/* 3 */
+            .btn-3 {
+              background: rgb(0,172,238);
+            background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+              width: 130px;
+              height: 40px;
+              line-height: 42px;
+              padding: 0;
+              border: none;
+              
+            }
+            .btn-3 span {
+              position: relative;
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+            .btn-3:before,
+            .btn-3:after {
+              position: absolute;
+              content: "";
+              right: 0;
+              top: 0;
+               background: rgba(2,126,251,1);
+              transition: all 0.3s ease;
+            }
+            .btn-3:before {
+              height: 0%;
+              width: 2px;
+            }
+            .btn-3:after {
+              width: 0%;
+              height: 2px;
+            }
+            .btn-3:hover{
+               background: transparent;
+              box-shadow: none;
+            }
+            .btn-3:hover:before {
+              height: 100%;
+            }
+            .btn-3:hover:after {
+              width: 100%;
+            }
+            .btn-3 span:hover{
+               color: rgba(2,126,251,1);
+            }
+            .btn-3 span:before,
+            .btn-3 span:after {
+              position: absolute;
+              content: "";
+              left: 0;
+              bottom: 0;
+               background: rgba(2,126,251,1);
+              transition: all 0.3s ease;
+            }
+            .btn-3 span:before {
+              width: 2px;
+              height: 0%;
+            }
+            .btn-3 span:after {
+              width: 0%;
+              height: 2px;
+            }
+            .btn-3 span:hover:before {
+              height: 100%;
+            }
+            .btn-3 span:hover:after {
+              width: 100%;
+            }
+            
+          </style>
+        
+        </button>
+        </div>
+
+      </section>
+
+      <section class="light" style="/* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+        <h2>👩🏽‍🚀 Projects</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2>🏆 Accomplishments</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <br>
+        <div>
+        <button class="custom-btn btn-3" style="font-family: Poppins, sans-serif; float: right;"><a href="http://127.0.0.1:5500/"> <span>Read More</span></a>
+          <style>/* 3 */
+            .btn-3 {
+              background: rgb(0,172,238);
+            background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+              width: 130px;
+              height: 40px;
+              line-height: 42px;
+              padding: 0;
+              border: none;
+              
+            }
+            .btn-3 span {
+              position: relative;
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+            .btn-3:before,
+            .btn-3:after {
+              position: absolute;
+              content: "";
+              right: 0;
+              top: 0;
+               background: rgba(2,126,251,1);
+              transition: all 0.3s ease;
+            }
+            .btn-3:before {
+              height: 0%;
+              width: 2px;
+            }
+            .btn-3:after {
+              width: 0%;
+              height: 2px;
+            }
+            .btn-3:hover{
+               background: transparent;
+              box-shadow: none;
+            }
+            .btn-3:hover:before {
+              height: 100%;
+            }
+            .btn-3:hover:after {
+              width: 100%;
+            }
+            .btn-3 span:hover{
+               color: rgba(2,126,251,1);
+            }
+            .btn-3 span:before,
+            .btn-3 span:after {
+              position: absolute;
+              content: "";
+              left: 0;
+              bottom: 0;
+               background: rgba(2,126,251,1);
+              transition: all 0.3s ease;
+            }
+            .btn-3 span:before {
+              width: 2px;
+              height: 0%;
+            }
+            .btn-3 span:after {
+              width: 0%;
+              height: 2px;
+            }
+            .btn-3 span:hover:before {
+              height: 100%;
+            }
+            .btn-3 span:hover:after {
+              width: 100%;
+            }
+            
+          </style>
+        
+        </button>
+        </div>
+
+      </section>
+
+      <section style="/* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+      <div class='container' style="margin-top: 200px; margin-left: 200px">
+        <div class="animate__shape animate__shape_center"></div>
+        <style>
+          .animate__shape {
+            position: relative;
+            display: inline-block;
+        }
+
+        .animate__shape::after {
+            position: absolute;
+            content: '';
+            width: 300px;
+            height: 300px;
+            background-image: linear-gradient(45deg, rgb(224, 220, 255) 0%, rgb(255, 195, 231) 100%);
+            z-index: -1;
+            animation: scale 10s ease infinite;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .animate__shape_center::after {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes scale {
+            0% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+
+            50% {
+                border-radius: 17% 83% 24% 76% / 78% 78% 22% 22%;
+                background-image: linear-gradient(90deg, rgb(224, 220, 255) 0%, rgb(255, 195, 231) 100%);
+                opacity: .25;
+            }
+
+            60% {
+                border-radius: 40%;
+            }
+
+            75% {
+                border-radius: 73% 27% 79% 21% / 51% 62% 38% 49%;
+            }
+
+            100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+        }
+
+        </style>
+      </div>
+        <p>The best way out is always through <br>-Robert Frost</p>
+      </section>
+
+
+
+      
+      
+
+      <section class="left" style="/* From https://css.glass */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);">
+        <p>Thanks for watching!</p>
+      </section>
+
+
+    </main>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

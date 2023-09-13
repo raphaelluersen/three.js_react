@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Stars London</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+
+
+
+<body>
+    <video autoplay loop muted plays-inline class="background-video">
+      <source
+        src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GTYSdDW/server-brings-out-food-into-busy-restaurant_z1lznzgwb__73e4bee7666a243b288a39b489851574__P360.mp4"
+        type="video/mp4" />
+    </video>
+
+    <header >
+
+      <a href="#"><img src="./Group 10.png" alt="logo"  style="width: 15%;"/></a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="#" class="nav-item" style="--i: 0">Home</a>
+        <a href="#" class="nav-item" style="--i: 1">Plan Your Visit</a>
+        <a href="#" class="nav-item" style="--i: 2">Magical Places</a>
+        <a href="#" class="nav-item" style="--i: 3">Contact</a>
+      </nav>
+    </header>
+
+    <section class="content">
+        <br>
+        <br>
+        <br>
+      <h1>Food Stars</h1>
+      <h2 style="margin-left: 10px; color: #fff; text-align: center;">A Food Staff London Agency</h2>
+
+      <ul> <img src="./PngItem_421398.png" width="70px" alt=""> &nbsp; &nbsp;<img src="./Top on google reviews logo.png" width="70px"></ul>
+      <br>
+      <a href="#" class="btn light"></a>
+      <br>
+      
+      <a href="#" class="btn light1"></a>
+      <br>
+      
+        <img src="./images.png" width="35%" style="border-radius: 10px;" alt="">
+  
+
+
+    </section>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.logo {
+  width: 30px;
+}
+
+.nav-item {
+  position: relative;
+  color: #fff;
+  font-size: 90%;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  margin-left: 1.0rem;
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover {
+  color: rgb(168, 239, 255, 0.9);
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 30%;
+  width: 0;
+  height: 0.15rem;
+  transform: translateX(-50%);
+  background-color: rgb(168, 239, 255, 0.9);
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  -webkit-text-stroke: 2px rgb(168, 239, 255, 1);
+  color: transparent;
+  transition: all 0.5s ease;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  background: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.light::before {
+  content: "";
+  position: absolute;
+  background-image: conic-gradient(
+    rgb(168, 239, 255, 1) 20deg,
+    transparent 150deg
+  );
+  width: 400%;
+  height: 400%;
+  border-radius: 5px;
+  animation: rotate 3s linear infinite;
+}
+.light1::before {
+  content: "";
+  position: absolute;
+  background-image: conic-gradient(
+    rgb(168, 239, 255, 1) 20deg,
+    transparent 150deg
+  );
+  width: 400%;
+  height: 400%;
+  border-radius: 5px;
+  animation: rotate 3s linear infinite;
+}
+
+.light::after {
+  content: "Hire Us";
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.light1::after {
+  content: "Work with us";
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  .background-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 1.3rem 5%;
+  }
+
+  .content h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  header::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+  }
+
+  header::after {
+    content: "";
+    top: 0;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    transition: 0.8s;
+  }
+
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  #check:checked ~ .navbar {
+    height: 17.7rem;
+  }
+
+  .nav-item {
+    display: block;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .nav-item:hover::after {
+    width: auto;
+  }
+
+  #check:checked ~ .navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.15s * var(--i));
+  }
+}
+
+@media (max-width: 620px) {
+  .content h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+  
+  .btn {
+    width: 130px;
+  }
+  
+  .light::after {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+}
+
+    </style>
+
+    </div>
+    <div class="custom-shape">
+        <style>
+            .custom-shape {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            animation: moveShape 5s linear infinite, changeColors 5s linear infinite;
+        }
+
+        @keyframes moveShape {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            50% {
+                transform: translateY(300px) translateX(300px);
+            }
+            100% {
+                transform: translateY(0) translateX(0);
+            }
+        }
+
+        @keyframes changeColors {
+            0%, 100% {
+                background: radial-gradient(circle at center, #ff5733, #e300ff);
+            }
+            25% {
+                background: radial-gradient(circle at center, #33ff57, #ff5733);
+            }
+            50% {
+                background: radial-gradient(circle at center, #e300ff, #33ff57);
+            }
+            75% {
+                background: radial-gradient(circle at center, #ff5733, #e300ff);
+            }
+        }
+
+
+
+        </style>
+    </div>
+    
+    <div>
+
+
+    <br>
+    <br>
+        <section style="/* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3); width:100%; margin-left: 0px;padding: 20px;">
+    <h1>Responsive<br/>CSS Flip Animation (CSS "Plugin")</h1>
+    <br>
+
+                <ul class="cards">
+                <li class="cards__axis">
+                    <figure class="cards__front">
+                    <img src="//placebear.com/g/300/300" alt=""/>
+                    <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                    </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                    <img src="//placebear.com/g/300/300" alt=""/>
+                    <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li class="cards__axis">
+                    <figure class="cards__front">
+                    <img src="./TURUL PROJECT DESIGN.001.png" alt=""/>
+                    <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                    </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                    <img src="./TURUL PROJECT DESIGN.001.png" alt=""/>
+                    <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li class="cards__axis">
+                    <figure class="cards__front">
+                    <img src="//placebear.com/g/300/300" alt=""/>
+                    <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                    </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                    <img src="//placebear.com/g/300/300" alt=""/>
+                    <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li class="cards__axis">
+                    <figure class="cards__front">
+                    <img src="./TURUL PROJECT DESIGN.004.png" alt=""/>
+                    <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                    </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                    <img src="//placebear.com/g/300/300" alt=""/>
+                    <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                    </figcaption>
+                    </figure>
+                </li>
+                </ul>
+                <br>
+                <br>
+                
+
+                <ul class="cards">
+                  <li class="cards__axis">
+                    <figure class="cards__front">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li class="cards__axis">
+                    <figure class="cards__front">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li class="cards__axis">
+                    <figure class="cards__front">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li class="cards__axis">
+                    <figure class="cards__front">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--front">
+                        <p>I'm priceless.</p>
+                      </figcaption>
+                    </figure>
+                    <figure class="cards__back">
+                      <img src="//placebear.com/g/300/300" alt=""/>
+                      <figcaption class="cards__description--back">
+                        <p>SOLD!</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                </ul>
+                <style>*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+                    
+                    
+                    
+                    
+                    /* REUSABLE CSS3 "PLUGIN" CODE IF YOU WILL */
+                    .cards * {
+                      width: 100%;
+                    }
+                    .cards__axis {
+                        position: relative;
+                    }
+                    .cards__axis:before {
+                        content: "";
+                        display: block;
+                        padding-top: 100%;
+                    }
+                    .cards__front,
+                    .cards__back {
+                        position: absolute;
+                        top: 0;
+                      margin: 0;
+                        -webkit-transition: 0.5s ease-in-out;
+                        -moz-transition: 0.5s ease-in-out;
+                        -ms-transition: 0.5s ease-in-out;
+                        -o-transition: 0.5s ease-in-out;
+                        transition: 0.5s ease-in-out;
+                    }
+                    .cards__front {
+                        -webkit-backface-visibility: hidden;
+                        -moz-backface-visibility: hidden;
+                        -ms-backface-visibility: hidden;
+                        -o-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                      
+                        -webkit-transform: perspective(1000px) rotateY(0deg);
+                        -moz-transform: perspective(1000px) rotateY(0deg);
+                        -ms-transform: perspective(1000px) rotateY(0deg);
+                        -o-transform: perspective(1000px) rotateY(0deg);
+                        transform: perspective(1000px) rotateY(0deg);
+                    }
+                    .cards__axis:hover .cards__front {
+                        -webkit-transform: perspective(1000px) rotateY(-180deg);
+                        -moz-transform: perspective(1000px) rotateY(-180deg);
+                        -ms-transform: perspective(1000px) rotateY(-180deg);
+                      -o-transform: perspective(1000px) rotateY(-180deg);
+                        transform: perspective(1000px) rotateY(-180deg);
+                    }
+                    .cards__back {
+                        -webkit-backface-visibility: hidden;
+                        -moz-backface-visibility: hidden;
+                        -ms-backface-visibility: hidden;
+                        -o-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                      
+                        -webkit-transform: perspective(1000px) rotateY(180deg);
+                        -moz-transform: perspective(1000px) rotateY(180deg);
+                        -ms-transform: perspective(1000px) rotateY(180deg);
+                        -o-transform: perspective(1000px) rotateY(180deg);
+                        transform: perspective(1000px) rotateY(180deg);
+                    }
+                    .cards__axis:hover .cards__back {
+                        -webkit-transform: perspective(1000px) rotateY(0);
+                        -moz-transform: perspective(1000px) rotateY(0);
+                        -ms-transform: perspective(1000px) rotateY(0);
+                        -o-transform: perspective(1000px) rotateY(0);
+                        transform: perspective(1000px) rotateY(0);
+                    }
+                    
+                    /* CUSTOM STYLES FOR THIS UNORDERED LIST */
+                    .cards {
+                      width: 100%;
+                      margin: 0 1%;
+                    }
+                    .cards {
+                      list-style-type: none;
+                      padding-left: none;
+                    }
+                    .cards:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                    .cards__axis {
+                      float: left;
+                      margin-left: 2.5%;
+                        width: 20%;
+                    }
+                    .cards__axis img {
+                      border: 15px solid #fff;
+                      border-bottom-width: 45px;
+                    }
+                    
+                    /* CONTENT STYLES */
+                    .cards__description--front {
+                      position: absolute;
+                      bottom: -10px;
+                      width: 100%;
+                      text-align: center;
+                    }
+                    .cards__description--front {
+                      font-size: 1.5em;
+                    }
+                    .cards__description--back {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 90%;
+                      background: rgb(255,255,255);
+                      background: rgba(255,255,255,0.9);
+                    }
+                    .cards__description--back p {
+                      position: absolute;
+                      width: 100%;
+                      top: 50%;
+                      margin-top: -1em;
+                      text-align: center;
+                      font-size: 2em;
+                      color: #880000;
+                      -webkit-transform: rotate(-30deg);
+                      -moz-transform: rotate(-30deg);
+                      -ms-transform: rotate(-30deg);
+                      -o-transform: rotate(-30deg);
+                      transform: rotate(-30deg);
+                    }
+                    
+                </style>
+                </div>
+            </div>
+            <br>
+                <div class="MainContainer">
+
+                    <div class="ParallaxContainer">
+                      <h1 style="font-size: 500%;">
+                        Hospitality Staff
+                      </h1>
+                    </div>
+                    <div class='container' style="margin-top: 100px; margin-left: 200px">
+                        <div class="animate__shape animate__shape_center"></div>
+                        <style>
+                          .animate__shape {
+                            position: relative;
+                            display: inline-block;
+                        }
+                
+                        .animate__shape::after {
+                            position: absolute;
+                            content: '';
+                            width: 500px;
+                            height: 500px;
+                            background-image: linear-gradient(45deg, rgb(224, 220, 255) 0%, rgb(255, 195, 231) 100%);
+                            z-index: -1;
+                            animation: scale 10s ease infinite;
+                            border: 5px solid rgba(0, 0, 0, 0.1);
+                        }
+                
+                        .animate__shape_center::after {
+                            top: 30%;
+                            left: 30%;
+                            transform: translate(-40%, -40%);
+                        }
+                
+                        @keyframes scale {
+                            0% {
+                                border-radius: 10% 50% 70% 30% / 30% 30% 70% 70%;
+                            }
+                
+                            50% {
+                                border-radius: 17% 83% 24% 76% / 78% 78% 22% 22%;
+                                background-image: linear-gradient(90deg, rgb(224, 220, 255) 0%, rgb(255, 195, 231) 100%);
+                                opacity: .25;
+                            }
+                
+                            60% {
+                                border-radius: 40%;
+                            }
+                
+                            75% {
+                                border-radius: 73% 27% 79% 21% / 51% 62% 38% 49%;
+                            }
+                
+                            100% {
+                                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                            }
+                        }
+                
+                        </style>
+                      </div>
+                  
+                    <div class="ContentContainer">
+                      <div class="Content">
+                        <p>ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana. ʻO Lorem Ipsum ka 'ōlelo papahana maʻamau o kaʻoihana o ka makahiki 1500, i ka wā i lawe ai kekahi mea paʻi kiʻiʻole i keʻano o ka type a scrambled iā ia e hana i kahi puke kiko'ī. ʻAʻole i ola wale i kaʻelima mau kenekulia, akā,ʻo ka leleʻana hoʻi i nāʻano o ka lolouila, e hoʻololiʻoleʻia ana. Ua hoʻolahaʻia i nā makahiki 1960 me ka hoʻokuʻuʻana i nā pepa Letraset i loko o nā moʻolelo Lorem Ipsum, a me nā mea hou aku me ka polokalamu hoʻopuka pākī e like me Aldus PageMaker me nā papa o Lorem Ipsum.
+                        </p>
+                        <p>ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana. ʻO Lorem Ipsum ka 'ōlelo papahana maʻamau o kaʻoihana o ka makahiki 1500, i ka wā i lawe ai kekahi mea paʻi kiʻiʻole i keʻano o ka type a scrambled iā ia e hana i kahi puke kiko'ī. ʻAʻole i ola wale i kaʻelima mau kenekulia, akā,ʻo ka leleʻana hoʻi i nāʻano o ka lolouila, e hoʻololiʻoleʻia ana. Ua hoʻolahaʻia i nā makahiki 1960 me ka hoʻokuʻuʻana i nā pepa Letraset i loko o nā moʻolelo Lorem Ipsum, a me nā mea hou aku me ka polokalamu hoʻopuka pākī e like me Aldus PageMaker me nā papa o Lorem Ipsum.
+                        </p>
+                        <p>ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana. ʻO Lorem Ipsum ka 'ōlelo papahana maʻamau o kaʻoihana o ka makahiki 1500, i ka wā i lawe ai kekahi mea paʻi kiʻiʻole i keʻano o ka type a scrambled iā ia e hana i kahi puke kiko'ī. ʻAʻole i ola wale i kaʻelima mau kenekulia, akā,ʻo ka leleʻana hoʻi i nāʻano o ka lolouila, e hoʻololiʻoleʻia ana. Ua hoʻolahaʻia i nā makahiki 1960 me ka hoʻokuʻuʻana i nā pepa Letraset i loko o nā moʻolelo Lorem Ipsum, a me nā mea hou aku me ka polokalamu hoʻopuka pākī e like me Aldus PageMaker me nā papa o Lorem Ipsum.
+                        </p>
+                       </div>
+                    </div>
+                    <style>
+                      
+                      .MainContainer {
+                        perspective: 1px;
+                        transform-style: preserve-3d;
+                        height: 100vh;
+                        width: 100%;
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                      }
+                      
+                      .ContentContainer {
+                        position: relative;
+                        display: block;
+                        background-color: rgb(169, 165, 165);
+                        z-index: 1;
+                      }
+                      
+                      .Content {
+                        max-width: 70%;
+                        margin: 0 auto;
+                        padding: 75px 0;
+                      }
+                      
+                      p {
+                        margin: 75px 0;
+                      }
+                      
+                      .ParallaxContainer {
+                        display: flex;
+                        flex: 1 0 auto;
+                        position: relative;
+                        z-index: -1;
+                        height: 100vh;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translateZ(-1px) scale(2);
+                        background-image: url(./TURUL\ PROJECT\ DESIGN.001.png);
+                        background-color: rgb(144, 144, 144);
+                      }
+                      
+                      
+
+
+
+                    </style>
+                  </div>
+                  <section>
+                    <div class="comment-list">
+                        <div class="main-ctrls">
+                            <button class="delete-all-btn ctrl-btns">Delete all comments</button>
+                            <button class="start-new-btn ctrl-btns">Add comment</button>
+                            <div class="comment-bar hidden">
+                                <input class="comment-input"></input>
+                                <button class="close-new-btn secondary-ctrl-btns">Close</button>
+                                <button class="add-new-btn ctrl-btns">Add</button>
+                            </div>
+                        </div>
+                        <style>section {
+                           
+                            color: #FBFCFC;
+                          }
+                          
+                          .comment-list {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            padding: 16px;
+                          }
+                          
+                          .main-ctrls {
+                            display: flex;
+                            gap: 8px;
+                            margin-bottom: 16px;
+                            padding: 8px;
+                            border-radius: 8px;
+                            background-color: #1B1D22;
+                          }
+                          
+                          .comment-main {
+                            background-color: #1B1D22;
+                            padding: 8px 16px;
+                            border-radius: 8px;
+                          }
+                          
+                          .upvote-count {
+                            padding: 4px 12px;
+                            background-color: #1F242C;
+                            border-radius: 4px;
+                          }
+                          
+                          .comment-controls {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                          }
+                          
+                          .comment-text {
+                            margin-bottom: 12px;
+                          }
+                          
+                          .ctrl-btns {
+                            background-color: #1F242C;
+                            border: 1px solid #66E84C;
+                            border-radius: 4px;
+                            padding: 4px 8px;
+                            cursor: pointer;
+                            width: fit-content;
+                            color: #FBFCFC;
+                          }
+                          .secondary-ctrl-btns {
+                            background-color: transparent;
+                            border: none;
+                            padding: 4px 8px;
+                            cursor: pointer;
+                            width: fit-content;
+                            color: #FBFCFC;
+                          }
+                          
+                          .active-btn {
+                            background-color: #66E84C;
+                            color: #1F242C;
+                          }
+                          
+                          input {
+                            background-color: transparent;
+                            border: none;
+                            outline: none;
+                            border-bottom: 1px solid #66E84C;
+                            color: #FBFCFC;
+                          }
+                          
+                          .hidden {
+                            display: none;
+                          }
+                          
+                          .children {
+                            margin-left: 24px;
+                            margin-top: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                          }
+                            
+
+
+                        </style>
+                        <script>let allComments = {
+                            '0': {
+                              id: '0',
+                              text: 'Test comment',
+                              count: 5,
+                              vote: 1,
+                              children: [],
+                            }
+                          };
+                          
+                          let commentList = ['0'];
+                          
+                          const createCommentNode = () => {
+                            const commentItem = document.createElement("div");
+                            commentItem.classList.add("comment-item");
+                            commentItem.innerHTML = `
+                                  <div class="comment-main">
+                                  <p class="comment-text"></p>
+                                  <div class="comment-controls">
+                                      <p class="upvote-count"></p>
+                                      <button class="upvote-btn ctrl-btns">Upvote</button>
+                                      <button class="downvote-btn ctrl-btns">Downvote</button>
+                                      <button class="reply-btn ctrl-btns">Reply</button>
+                                      <div class="reply-bar hidden">
+                                          <input class="reply-input"></input>
+                                          <button class="close-btn secondary-ctrl-btns">Close</button>
+                                          <button class="add-btn ctrl-btns">Add</button>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="children"></div>
+                              `;
+                            return commentItem;
+                          };
+                          
+                          const getData = () => {
+                            const allCommentsStr = localStorage.getItem("allComments");
+                            const commentListStr = localStorage.getItem("commentList");
+                            if (allCommentsStr) allComments = JSON.parse(allCommentsStr);
+                            if (commentListStr) commentList = JSON.parse(commentListStr);
+                          };
+                          
+                          const saveData = () => {
+                            localStorage.setItem("allComments", JSON.stringify(allComments));
+                            localStorage.setItem("commentList", JSON.stringify(commentList));
+                          };
+                          
+                          const setCommentData = (key) => {
+                            const commentItem = createCommentNode();
+                            commentItem.setAttribute("data-key", key);
+                            commentItem.querySelector(".comment-text").innerHTML = allComments[key].text;
+                            commentItem.querySelector(".upvote-count").innerHTML = allComments[key].count;
+                            commentItem.querySelector(".reply-btn").addEventListener("click", startReply);
+                            commentItem.querySelector(".add-btn").addEventListener("click", addReply);
+                            commentItem.querySelector(".close-btn").addEventListener("click", closeReply);
+                          
+                            const upvoteBtn = commentItem.querySelector(".upvote-btn");
+                            upvoteBtn.addEventListener("click", (e) => handleVote(e, "up"));
+                            if (allComments[key].vote === 1) upvoteBtn.classList.add("active-btn");
+                          
+                            const downvoteBtn = commentItem.querySelector(".downvote-btn");
+                            downvoteBtn.addEventListener("click", (e) => handleVote(e, "down"));
+                            if (allComments[key].vote === -1) downvoteBtn.classList.add("active-btn");
+                          
+                            const childrenEl = commentItem.querySelector(".children");
+                            allComments[key].children.forEach((childKey) => {
+                              const newCommentEl = setCommentData(childKey);
+                              childrenEl.appendChild(newCommentEl);
+                            });
+                          
+                            return commentItem;
+                          };
+                          
+                          const createCommentObject = (textContent) => {
+                            const newId = Date.now().toString();
+                            const newComment = {
+                              id: newId,
+                              text: textContent,
+                              count: 0,
+                              vote: 0,
+                              children: [],
+                            };
+                            allComments[newId] = newComment;
+                            return newId;
+                          };
+                          
+                          const startReply = (e) => {
+                            const commentItem = e.target.parentNode.parentNode.parentNode.parentNode;
+                            const replyBtn = commentItem.querySelector(".reply-btn");
+                            replyBtn.classList.add("hidden");
+                            const replyBar = commentItem.querySelector(".reply-bar");
+                            replyBar.classList.remove("hidden");
+                          };
+                          
+                          const closeReply = (e) => {
+                            const commentItem = e.target.parentNode.parentNode.parentNode.parentNode;
+                            const replyBtn = commentItem.querySelector(".reply-btn");
+                            replyBtn.classList.remove("hidden");
+                            const replyBar = commentItem.querySelector(".reply-bar");
+                            replyBar.classList.add("hidden");
+                          };
+                          
+                          const addReply = (e) => {
+                            const commentItem = e.target.parentNode.parentNode.parentNode.parentNode;
+                            const textBox = e.target.parentNode.querySelector(".reply-input");
+                          
+                            const newId = createCommentObject(textBox.value);
+                            textBox.value = "";
+                          
+                            const key = commentItem.getAttribute("data-key");
+                            allComments[key].children.push(newId);
+                          
+                            const replyBtn = commentItem.querySelector(".reply-btn");
+                            replyBtn.classList.remove("hidden");
+                            const replyBar = commentItem.querySelector(".reply-bar");
+                            replyBar.classList.add("hidden");
+                          
+                            const childrenEl = commentItem.querySelector(".children");
+                            const newCommentEl = setCommentData(newId);
+                            childrenEl.appendChild(newCommentEl);
+                            saveData();
+                          };
+                          
+                          const handleVote = (e, type) => {
+                            const commentItem = e.target.parentNode.parentNode.parentNode;
+                            const textEl = commentItem.querySelector(".upvote-count");
+                            const key = commentItem.getAttribute("data-key");
+                            const currentCount = allComments[key].count - allComments[key].vote;
+                          
+                            const updatedCount =
+                              type === "up"
+                                ? allComments[key].vote === 1
+                                  ? currentCount
+                                  : currentCount + 1
+                                : allComments[key].vote === -1
+                                ? currentCount
+                                : currentCount - 1;
+                            allComments[key].count = updatedCount;
+                            allComments[key].vote = updatedCount - currentCount;
+                            textEl.innerHTML = updatedCount;
+                          
+                            const upvoteBtn = commentItem.querySelector(".upvote-btn");
+                            const downvoteBtn = commentItem.querySelector(".downvote-btn");
+                            if (allComments[key].vote === 1) {
+                              upvoteBtn.classList.add("active-btn");
+                              downvoteBtn.classList.remove("active-btn");
+                            } else if (allComments[key].vote === -1) {
+                              upvoteBtn.classList.remove("active-btn");
+                              downvoteBtn.classList.add("active-btn");
+                            } else {
+                              upvoteBtn.classList.remove("active-btn");
+                              downvoteBtn.classList.remove("active-btn");
+                            }
+                            saveData();
+                          };
+                          
+                          const renderComments = () => {
+                            commentList.forEach((key) => {
+                              const commentItem = setCommentData(key);
+                              document.querySelector(".comment-list").appendChild(commentItem);
+                            });
+                          };
+                          
+                          const commentListEl = document.querySelector(".comment-list");
+                          const startNewBtn = document.querySelector(".start-new-btn");
+                          const addNewBtn = document.querySelector(".add-new-btn");
+                          const closeNewBtn = document.querySelector(".close-new-btn");
+                          const deleteAllBtn = document.querySelector(".delete-all-btn");
+                          const commentBar = commentListEl.querySelector(".comment-bar");
+                          
+                          const startNewComment = (e) => {
+                            startNewBtn.classList.add("hidden");
+                            commentBar.classList.remove("hidden");
+                          };
+                          
+                          const closeNewComment = (e) => {
+                            startNewBtn.classList.remove("hidden");
+                            commentBar.classList.add("hidden");
+                          };
+                          
+                          const addNewComment = (e) => {
+                            const textBox = e.target.parentNode.querySelector(".comment-input");
+                          
+                            const newId = createCommentObject(textBox.value);
+                            textBox.value = "";
+                            commentList.push(newId);
+                          
+                            const commentBar = commentListEl.querySelector(".comment-bar");
+                            commentBar.classList.add("hidden");
+                            startNewBtn.classList.remove("hidden");
+                          
+                            const commentItem = setCommentData(newId);
+                            commentListEl.appendChild(commentItem);
+                            saveData();
+                          };
+                          
+                          const deleteAllComments = (e) => {
+                            commentList = []
+                            allComments = {}
+                            saveData()
+                            commentEls = commentListEl.querySelectorAll('.comment-item')
+                            commentEls.forEach((el) => el.remove())
+                          }
+                          
+                          startNewBtn.addEventListener("click", startNewComment);
+                          addNewBtn.addEventListener("click", addNewComment);
+                          closeNewBtn.addEventListener("click", closeNewComment);
+                          deleteAllBtn.addEventListener("click", deleteAllComments);
+                          
+                          
+                          getData();
+                          renderComments();
+                          
+                            
+                        </script>
+                    </div>
+                  </section>
+                  <footer>
+                    <section>
+                    <div class="social-media" style="padding: 20px;">
+                        <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="contact-form" style="padding: 20px;">
+                        <h2>Contact Us</h2>
+                        <form action="#">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+            
+                            <button type="submit">Send</button>
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            <img src="./Group 10.png" width="10%">
+                        </form>
+                    </div>
+                    
+                </footer>
+
+                  
+
+                    
+
+
+     
+
+
+
+  </body>
